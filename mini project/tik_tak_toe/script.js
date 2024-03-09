@@ -7,6 +7,9 @@ let msgcontainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 let turnO = true; //playerx , playerY
+
+
+// win patterns
 const winpatterns = [
         [0,1,2],
         [0,3,6],
@@ -18,7 +21,9 @@ const winpatterns = [
         [6,7,8]
 
 ]
+
 let count =0;
+
 
 boxes.forEach((box) =>{
     box.addEventListener("click",() =>{
