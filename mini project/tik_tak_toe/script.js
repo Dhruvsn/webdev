@@ -18,10 +18,10 @@ const winpatterns = [
         [6,7,8]
 
 ]
+let count =0;
 
 boxes.forEach((box) =>{
     box.addEventListener("click",() =>{
-        console.log("box was clicked");
         if(turnO){
             box.innerText = "O"
             turnO = false;
@@ -31,15 +31,33 @@ boxes.forEach((box) =>{
         turnO = true;
        }
        box.disabled = true;
-       checkWinner();
+       count++;
+       if(count == 9){
+        draw();
+
+       }
+       else{
+        checkWinner();
+       }
+       
+
     });
     
+    
 });
+
+const draw = () =>{
+        msg.innerText = "Game is Draw";
+        msgcontainer.classList.remove("hide");
+    disabledBoxes();
+
+}
 
 const resetGame = () =>{
     let turnO = true;
     enabledBoxes();
     msgcontainer.classList.add("hide");
+    count =0;
 }
 
 const disabledBoxes = () =>{
@@ -57,7 +75,7 @@ const enabledBoxes = () =>{
 
 
 const showWinner =(winnner) =>{
-    msg.innerHTML = `Congratulations,winner is ${winnner}`;
+        msg.innerHTML = `Congratulations,winner is ${winnner}`;
     msgcontainer.classList.remove("hide");
     disabledBoxes();
 }
