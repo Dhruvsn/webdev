@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+    font-size: 10px;
+   background-color: rgb(54, 69, 115);
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    height: 8rem;
+box-shadow: 5px 6px 7px #888888;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+header .logo p{
+   height: 2.5rem;
+   width: 2.5rem;
+   font-size: 2rem;
+   
+}
+header .logo :hover{
+    cursor: pointer;
+    color: #1ED760;
+}
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+header nav ul li{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+header nav ul li:hover{
+    cursor: pointer;
+    color: #1ED760;
+}
+
+ .hexagon{
+    height: 10rem;
+    width:  17.32rem;
+    position: relative;
+    right:20rem;
+    bottom: 10rem;
+    border-radius: 2rem  10rem;
+}
+
+
+.social i{
+    font-size: 2rem;
+    margin: 1rem 0.6rem;
+    color: white;
+
+}
+
+.fa-linkedin:hover{
+    color: #0A66C2;
+    
+}
+
+.fa-twitter:hover{
+    color: #60B8FF;
+}
+
+.fa-square-instagram:hover{
+    color: #AA38C7;
+}
+
+.fa-github:hover{
+    color: #000000;
+}
+.fa-youtube:hover{
+    color: #F62D3A;
+}
+
+
+section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
+}
+
+section .content{
+    display: flex;
+    gap: 0.4px;
+    flex-direction: column;
+    margin-left: 15rem;
+    margin-top: 10rem;
+   height: 40rem;
+   width: 40rem;
+   padding: 2rem;
+
+}
+section .content h3{
+     margin-top: 2.5rem;
+     font-size: 1.6rem;
+
+}
+
+section .content h2{
+    font-size: 3rem;
+}
+
+section .content h1{
+    font-size: 3.6rem;
+}
+
+section .content p{
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: black;
+    height: 8rem;
+}
+
+footer .footer {
+    height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+}
+
+.footer .footer-logo img{
+    padding: 10px;
+     height: 5px;
+     width: 5px;
+     margin-left: 2rem;
+}
+
+.footer .logo img:hover{
+    cursor: pointer;
+}
+
+.footer .footer-content ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content ul li{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-content ul li:hover{
+     cursor: pointer;
+     color: #1ED760;
+}
+
+
+
